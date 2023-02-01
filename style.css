@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;   
+    color:antiquewhite; 
+}
+
+.row{
+    height: 100vh;
+}
+
+.card{
+    padding: 0px;
+    margin-top: 5px;
+}
+
+#columna-datos{
+    height: 100vh;
+    padding-block: 5px 0px;
+    background-color: rgb(156, 156, 156); 
+}
+
+#columna-experiencias{
+    height: 100vh;
+    padding-block: 5px 0px;
+    background-color: rgb(108, 108, 108);    
+}
+
+#seccion-fotos{
+    text-align: center;
+    background-color: whitesmoke;
+    color:black;
+}
+
+#seccion-fotos img{
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+#dato {
+    padding-left: 5px;
+}
+
+#dato:hover {
+    border: 1px solid grey;
+    padding-left: 20px;
+}

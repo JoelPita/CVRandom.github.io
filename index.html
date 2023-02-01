@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Random</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dcb356fe30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <nav class="navbar navbar-dark bg-dark justify-content-between">
+            <a class="navbar-brand">Curriculum Vitae Random</a>
+            <form class="form-inline">
+              <button class="btn btn-sm btn-outline-secondary" type="button" onclick="persona_random()"><i class="fa-sharp fa-solid fa-arrow-rotate-right"></i> Cambiar persona</button>
+            </form>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-4" id="columna-datos">
+            <div class="card text-white bg-dark">
+                <div class="card-header" id="seccion-fotos">
+                    <h5 id="nombre-completo"></h5>
+                    <img id="foto" src="" alt=""/>
+                </div>
+                <div class="card-body"> 
+                    <h5 class="card-title">Datos personales</h5>
+                    <ul>
+                        <li class="list-group-item" id="dato">Nombre: <span id="DP-nombre"></span></li>
+                        <li class="list-group-item" id="dato">Apellido: <span id="DP-apellido"></span></li>
+                        <li class="list-group-item" id="dato">Nacionalidad: <span id="DP-nacionalidad"></span></li>
+                        <li class="list-group-item" id="dato">Edad: <span id="DP-edad"></span></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="card text-white bg-dark">
+                <div class="card-body"> 
+                    <h5 class="card-title">Datos de contacto</h5>
+                    <address> 
+                        <ul>
+                            <li class="list-group-item" id="dato">Tel.: <span id="DC-telefono"></span></li>
+                            <li class="list-group-item" id="dato">Cel.: <span id="DC-celular"></span></li>
+                            <li class="list-group-item" id="dato">Email: <span id="DC-email"></span></li>
+                            <li class="list-group-item" id="dato">Dirección: <span id="DC-direccion"></span></li>
+                            <li class="list-group-item" id="dato">Ubicación: <span id="DC-ubicacion"></span></li>
+                       </ul>
+                    </address>
+                </div>
+            </div>
+          </div>
+          <div class="col-8" id="columna-experiencias">
+            <div class="card">
+                <div class="card-header text-white bg-dark">
+                    <h6 class="card-title">¡Hola! Me presento</h6>
+                </div>
+                <div class="card-body text-dark bg-white" > 
+                    <span id="DP-nombre"></span>dsdsds
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-white bg-dark">
+                    <h6 class="card-title">Mis Experiencias</h6>
+                </div>
+                <div class="card-body text-dark bg-white" > 
+                    <span id="DP-nombre"></span>dsdsds
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-white bg-dark">
+                    <h6 class="card-title">Mis Formación</h6>
+                </div>
+                <div class="card-body text-dark bg-white" > 
+                    <span id="DP-nombre"></span>dsdsds
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+    </body>
+</html>
