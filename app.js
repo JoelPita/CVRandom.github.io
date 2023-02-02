@@ -7,6 +7,17 @@ async function persona_random (){
     cargar_datos_personales(ficha_de_persona);
 }
 
+<<<<<<< HEAD
+=======
+async function persona_experiencia (){
+    const response2 = await fetch('/jason.json');
+    const archivo_datos2 = await response2.json();
+    let presentacion = document.getElementById("Presentacion");
+    presentacion.innerHTML = `${archivo_datos2.presentacion}` ;
+}
+
+
+>>>>>>> d5a95871290e498196916a93b154b53a210a2d73
 function cargar_datos_personales(ficha){
 
     let imagen_foto = document.getElementById("foto");
