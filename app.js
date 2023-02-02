@@ -13,7 +13,7 @@ async function persona_experiencia (){
     const response2 = await fetch('/jason.json');
     const archivo_datos2 = await response2.json();
     let presentacion = document.getElementById("Presentacion");
-    presentacion.innerHTML = archivo_datos2.presentacion ;
+    presentacion.innerHTML = `${archivo_datos2.presentacion}` ;
 }
 
 
