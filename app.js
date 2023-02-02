@@ -6,12 +6,14 @@ async function persona_random (){
     const archivo_datos = await response.json();
     const ficha_de_persona = archivo_datos.results[0];
     cargar_datos_personales(ficha_de_persona);
+    persona_experiencia ();
 }
 
 async function persona_experiencia (){
-    const response2 = await fetch('jason.json');
-    //const archivo_datos2 = await response2.json();
-    //console.log( JSON.parse(archivo_datos2.results));
+    const response2 = await fetch('/jason.json');
+    const archivo_datos2 = await response2.json();
+    let presentacion = document.getElementById("Presentacion");
+    presentacion.innerHTML = archivo_datos2.presentacion ;
 }
 
 
