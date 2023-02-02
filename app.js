@@ -1,5 +1,6 @@
 persona_random();
 
+//Procedimiento que genera la ficha random. Un archivo json de la api randomuser. 
 async function persona_random (){
     const response = await fetch('https://randomuser.me/api');
     const archivo_datos = await response.json();
@@ -7,9 +8,12 @@ async function persona_random (){
     cargar_datos_personales(ficha_de_persona);
 
 }
+
+//funcion que carga los datos 
+//PRE: debe recibir la ficha json de la api randomuser
 function cargar_datos_personales(ficha){
 
-    let imagen_foto = document.getElementById("foto");
+    const imagen_foto = document.getElementById("foto");
     imagen_foto.setAttribute('src', `${ficha.picture.large}`);
 
     //Para el encabezado de datos personales.
@@ -34,7 +38,8 @@ function cargar_datos_personales(ficha){
     cargar_al_id( `${ficha.location.city}, ${ficha.location.state} (${ficha.location.postcode})` , "DC-ubicacion");
 }
 
+//Función genérica para optimizar la lectura. Obtiene el elemento html correspondiente a un_id y carga un_texto.   
 function cargar_al_id(un_texto, un_id){
-    let elemento_by_id = document.getElementById(un_id);
+    const elemento_by_id = document.getElementById(un_id);
     elemento_by_id.innerHTML = un_texto;
 }
